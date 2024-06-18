@@ -76,7 +76,7 @@ dropdownButton.addEventListener('click', function () {
         dropdownButton.style.backgroundColor = "#FFCC00"
         dropdownButton.style.color = "#1E1E1E"
         dropdownButton.style.fontWeight = "500"
-        dropdownButton.style.borderRadius = "5px"
+        dropdownButton.style.borderRadius = "2px"
         dropdownMenu.style.display = "flex";
         dropdownMenuVisible = true;
     } else {

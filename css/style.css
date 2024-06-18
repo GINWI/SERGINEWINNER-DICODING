@@ -58,7 +58,7 @@
     display: flex;
     justify-content: center;
     background-color: #1E1E1E;
-    padding: 20px;
+    padding: 40px;
     position: fixed;
     top: 0;
 }
@@ -76,6 +76,7 @@ nav ul{
 
 nav ul li{
     list-style: none;
+    text-align: center;
 }
 
 nav ul li a{
@@ -87,13 +88,6 @@ nav ul li a{
 
 .contact{
     position: relative;
-}
-
-.contact:active{
-    background-color: #FFCC00;
-    color: #1E1E1E;
-    font-weight: 500;
-    border-radius: 3px;
 }
 
 /* DROPDOWN */
@@ -523,6 +517,11 @@ nav ul li a{
     .banner{
         margin-top: 40px;
     }
+
+    .nav-container{
+        padding: 16px;
+    }
+
     nav{
         width: 100%;
     }
@@ -576,13 +575,50 @@ nav ul li a{
 
 @media(max-width:500px){
     .banner{
-        margin-top: 55px;
-        min-width: 500px;
+        margin-top: 30px;
+        
     }
 }
 
 @media(max-width:485px){
     .testimonial{
         grid-template-areas: "cards" 'julukan' 'penduduk';
+    }
+}
+
+@media(max-width:442px){
+    nav ul li a{
+        font-size: .5em;
+        padding: 0;
+    }
+
+    .dropdown{
+        padding: 5px;
+    }
+
+    .dropdown ol li{
+        margin-top: 5px;
+    }
+}
+
+@media(max-width:340px){
+    .nav-container{
+        padding: 5px;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    .banner{
+        margin-top: 100px;
+    }
+
+    .banner-judul{
+        font-size: 1.5em;
+    }
+
+    .banner-subjudul{
+        font-size: .9em;
     }
 }
